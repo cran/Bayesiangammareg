@@ -1,0 +1,11 @@
+exportPattern("^[[:alpha:]]+")
+import(mvtnorm)
+importFrom("grDevices", "dev.new")
+  importFrom("stats", "as.ts", "coef", "dgamma", "printCoefmat",
+             "quantile", "runif", "sd", "ts.plot")
+S3method(print, Bayesiangammareg)
+S3method(print, summary.Bayesiangammareg)
+S3method(summary,Bayesiangammareg)
+
+export(print.Bayesiangammareg)
+export(print.summary.Bayesiangammareg)
